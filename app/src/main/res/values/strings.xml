@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Zjl Lab</string>
+    <string name="flag_activity_forward_result_caller_describe">This CallerActivity will start a MediumActivity which will then start a ResultActivity, this CallerActivity want receive the ResultActivity\'s result.</string>
+    <string name="flag_activity_forward_result_medium_describe">This is the MediumActivity</string>
+    <string name="flag_activity_forward_result_result_describe">This is the ResultActivity</string>
+</resources>

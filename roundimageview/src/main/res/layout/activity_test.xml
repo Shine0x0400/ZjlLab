@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_test"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5cd6ff"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.zjl.roundimageview.TestRoundImageViewActivity">
+
+    <com.zjl.roundimageview.RoundImageView
+        android:id="@+id/roundImageView"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/zhuyin"
+        app:riv_bottomRight="40dp"
+        app:riv_topLeft="20dp" />
+
+    <FrameLayout
+        android:id="@+id/img_container"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/roundImageView" />
+
+
+    <Button
+        android:id="@+id/set_corners"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="setCorners"
+        android:text="Set Corners" />
+
+    <EditText
+        android:id="@+id/bottomLeft"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/set_corners"
+        android:ems="10"
+        android:hint="左下，px"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/bottomRight"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/set_corners"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="右下，px"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/topLeft"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLeft"
+        android:ems="10"
+        android:hint="左上，px"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/topRight"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/bottomLeft"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="右上，px"
+        android:inputType="numberDecimal" />
+</RelativeLayout>
