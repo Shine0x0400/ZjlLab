@@ -1,1 +1,4 @@
-include ':app', ':mylint', ':mylint_aar', ':customizetoast', ':roundimageview'
+include ':app', ':deviceinfo',
+        ':mylint', ':mylint_aar',
+        ':customizetoast',
+        ':roundimageview'
