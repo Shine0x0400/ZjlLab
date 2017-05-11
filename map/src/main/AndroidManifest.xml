@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zjl.map">
+
+    <!--高德地图权限-->
+    <!--&lt;!&ndash;允许程序打开网络套接字&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.INTERNET" />-->
+    <!--&lt;!&ndash;允许程序设置内置sd卡的写权限&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+    <!--&lt;!&ndash;允许程序获取网络状态&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />-->
+    <!--&lt;!&ndash;允许程序访问WiFi网络信息&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />-->
+    <!--&lt;!&ndash;允许程序读写手机状态和身份&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.READ_PHONE_STATE" />-->
+    <!--&lt;!&ndash;允许程序访问CellID或WiFi热点来获取粗略的位置&ndash;&gt;-->
+    <!--<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />-->
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true">
+
+        <!--高德key-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="请输入您的用户Key" />
+
+        <activity android:name=".AddressActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="www.meituan.com"
+                    android:path="/map"
+                    android:scheme="iconch" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

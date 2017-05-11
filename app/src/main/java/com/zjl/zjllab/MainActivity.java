@@ -1,6 +1,7 @@
 package com.zjl.zjllab;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -38,6 +39,12 @@ public class MainActivity extends AppCompatActivity implements CasesFragment.OnL
             startActivity(new Intent(this, CallerActivity.class));
         } else if ("3".equals(item.id)) {
             startActivity(new Intent(this, TestRoundImageViewActivity.class));
+        } else if ("4".equals(item.id)) {
+            Uri uri = Uri.parse("iconch://www.meituan.com/map?latitude=39.906901&longitude=116.397972&title=xxx&name=班加罗尔");
+            Intent i = new Intent(Intent.ACTION_VIEW, uri);
+            if (i.resolveActivity(getPackageManager()) != null) {
+                startActivity(i);
+            }
         }
     }
 }

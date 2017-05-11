@@ -21,6 +21,7 @@ public class CasesHelper {
         addItem(createCase(1, "Test PorterDuffXfermode"));
         addItem(createCase(2, "Test FLAG_ACTIVITY_FORWARD_RESULT"));
         addItem(createCase(3, "Test RoundImageView"));
+        addItem(createCase(4, "地图"));
     }
 
     private static void addItem(Case item) {
