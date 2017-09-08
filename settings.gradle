@@ -1,4 +1,4 @@
-include ':app', ':deviceinfo', ':map',
+include ':app', ':deviceinfo', ':map', ':jacocodemo',
         ':mylint', ':mylint_aar',
         ':customizetoast',
         ':roundimageview'

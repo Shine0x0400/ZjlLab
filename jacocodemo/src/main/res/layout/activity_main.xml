@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zjl.jacocodemo.MainActivity">
+
+    <EditText
+        android:id="@+id/input_edit"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:hint="input 1~9"
+        android:textColor="#0000FF"
+        android:textSize="40sp" />
+
+    <Button
+        android:id="@+id/exe_btn"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_edit"
+        android:layout_centerHorizontal="true"
+        android:text="Execute"
+        android:textSize="30sp" />
+
+</RelativeLayout>
